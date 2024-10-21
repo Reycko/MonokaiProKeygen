@@ -72,7 +72,7 @@ program
       addKeyStmt.run(extensionKey, JSON.stringify(modifiedValue));
 
       console.log(
-        'Automatically added license key to VSCode. You probably need to restart VSCode. This might not work is VSCode is currently open.'
+        'Automatically added license key to VSCode. You probably need to restart VSCode. This might not work if VSCode is currently open.'
       );
     }
     console.log('Email:', ARGUMENTS.email);
