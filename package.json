@@ -1,11 +1,23 @@
 {
+	"name": "monokai-pro-keygen",
+	"author": "Reycko",
+	"license": "MIT",
+	"version": "1.0.0",
+	"main": "src/index.ts",
 	"scripts": {
-		"build": "tsc .",
-		"test": "ts-node ."
+		"build": "tsc --build .",
+		"preinstall": "npx only-allow npm",
+		"dev": "ts-node .",
+		"start": "node ./dist/index.js"
 	},
-
 	"devDependencies": {
+		"@types/better-sqlite3": "^7.6.11",
 		"@types/node": "^22.7.7",
-    "ts-node": "^10.9.2"
+		"only-allow": "^1.2.1",
+		"ts-node": "^10.9.2"
+	},
+	"dependencies": {
+		"better-sqlite3": "^11.4.0",
+		"commander": "^12.1.0"
 	}
 }
